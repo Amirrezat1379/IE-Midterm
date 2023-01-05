@@ -2,26 +2,19 @@ html {
     font-size: 62.5%;
 }
 
-body {
-    font-size: 1.6rem;
-}
-
+/* set some default style and background to webpage */
 .amirGit {
-    /* background-image: url(../images/bg-paper@2x.jpg); */
     background: rgb(0,200,255);
     background: linear-gradient(0deg, rgba(0,200,255,1) 0%, rgba(0,0,0,1) 50%);
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 100vh;
+    /* these four lines set component as flexbox and set internal components to center of it */
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    /* set font color to white */
     color: #fff;
-}
-
-.amirGitHeader--logo {
-    height: 32px;
+    font-size: 1.6rem;
 }
 
 .amirGitMain {
@@ -32,10 +25,12 @@ body {
 }
 
 .amirGitMain--information {
+    /* set background to white with 30% transparncy */
     background-color: rgba(255,255,255,0.3);
+    /* desine border */
     border-radius: 15px;
     border-style: double;
-    height: 350px;
+    min-height: 350px;
     width: 635px;
 }
 
@@ -46,8 +41,13 @@ body {
     margin-left: 10px;
 }
 
+.amirGitMain--information__list {
+    overflow: hidden;
+}
+
 .amirGitMain--information__name {
-    margin-top: 40px;
+    margin-top: 35px;
+    margin-bottom: 10px;
 }
 
 .amirGitMain--information__link {
@@ -93,11 +93,7 @@ body {
     margin: 0 30px;
 }
 
-.amirGitMain--link__alert {
-    position: absolute;
-    display: none;
-}
-
+/* set serch container more goodloocking by initialize paddings in it */
 .amirGitMain--link__contaner {
     box-sizing: border-box;
     display: flex;
