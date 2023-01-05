@@ -9,7 +9,7 @@ const searchLink = document.getElementById("search")
 const userAlert = document.getElementById("alert")
 const userRepos = document.getElementById("repos")
 const userFavorite = document.getElementById("favorite")
-window.localStorage.clear()
+
 async function runLink() {
   // create user link to fetch
   const url = 'https://api.github.com/users/' + searchLink.value
@@ -192,6 +192,9 @@ function sort(array) {
         array[i] = k
       }
     }
+  }
+  for (i of array) {
+    console.log(i['updated_at'])
   }
   return array
 }
